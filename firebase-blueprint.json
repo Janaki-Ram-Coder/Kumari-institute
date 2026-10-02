@@ -1,0 +1,206 @@
+{
+  "entities": {
+    "teachers": {
+      "title": "Teacher Profile",
+      "description": "Verified tutors and educators registered with Kumari Institute in Rayagada",
+      "properties": {
+        "fullName": { "type": "string", "description": "Teacher full legal name" },
+        "email": { "type": "string", "description": "Teacher email address" },
+        "phone": { "type": "string", "description": "Teacher contact phone number" },
+        "gender": { "type": "string", "description": "Teacher gender" },
+        "latitude": { "type": "number", "description": "Live GPS latitude coordinate" },
+        "longitude": { "type": "number", "description": "Live GPS longitude coordinate" },
+        "locationArea": { "type": "string", "description": "Rayagada locality area name" },
+        "localityId": { "type": "string", "description": "Rayagada locality slug identifier" },
+        "address": { "type": "string", "description": "Full street address in Rayagada" },
+        "highestQualification": { "type": "string", "description": "Educational degree qualification" },
+        "courseDegree": { "type": "string", "description": "Degree stream or course specialization" },
+        "university": { "type": "string", "description": "University or college attended" },
+        "passingYear": { "type": "string", "description": "Year of graduation" },
+        "totalExperience": { "type": "string", "description": "Years of teaching experience" },
+        "experienceYears": { "type": "number", "description": "Numeric teaching experience" },
+        "subjects": { "type": "array", "items": { "type": "string" }, "description": "Subjects taught" },
+        "classesHandled": { "type": "array", "items": { "type": "string" }, "description": "Class grades handled" },
+        "monthlyFee": { "type": "number", "description": "Monthly fee in INR" },
+        "hourlyRate": { "type": "number", "description": "Hourly fee in INR" },
+        "tuitionModes": { "type": "array", "items": { "type": "string" }, "description": "Tuition modes offered" },
+        "selectedTimings": { "type": "array", "items": { "type": "string" }, "description": "Preferred time slots" },
+        "bio": { "type": "string", "description": "Teacher professional biography" },
+        "profileCompleted": { "type": "boolean", "description": "Whether full profile has been submitted" },
+        "role": { "type": "string", "description": "User role (teacher)" }
+      },
+      "required": ["fullName", "email", "phone"]
+    },
+    "parents": {
+      "title": "Parent Account",
+      "description": "Parents seeking home tutors and coaching for their children in Rayagada",
+      "properties": {
+        "fullName": { "type": "string", "description": "Parent full name" },
+        "email": { "type": "string", "description": "Parent email address" },
+        "phone": { "type": "string", "description": "Parent phone number" },
+        "childName": { "type": "string", "description": "Student or child name" },
+        "childGrade": { "type": "string", "description": "Grade / Standard of student" },
+        "board": { "type": "string", "description": "Educational board (CBSE, ICSE, BSE Odisha)" },
+        "subjects": { "type": "array", "items": { "type": "string" }, "description": "Subjects required" },
+        "locality": { "type": "string", "description": "Residence locality in Rayagada" },
+        "role": { "type": "string", "description": "User role (parent)" }
+      },
+      "required": ["fullName", "email", "phone"]
+    },
+    "demo_bookings": {
+      "title": "Demo Booking",
+      "description": "Trial and demo tuition requests submitted by parents",
+      "properties": {
+        "studentName": { "type": "string", "description": "Student full name" },
+        "parentName": { "type": "string", "description": "Parent full name" },
+        "phone": { "type": "string", "description": "Parent phone number" },
+        "email": { "type": "string", "description": "Parent email" },
+        "grade": { "type": "string", "description": "Class standard" },
+        "subject": { "type": "string", "description": "Subject requested" },
+        "mode": { "type": "string", "description": "Tuition mode" },
+        "preferredDate": { "type": "string", "description": "Preferred trial date" },
+        "preferredTime": { "type": "string", "description": "Preferred time slot" },
+        "status": { "type": "string", "description": "Status (Pending, Confirmed, Scheduled)" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["studentName", "phone"]
+    },
+    "enquiries": {
+      "title": "General Enquiry",
+      "description": "General admissions and course enquiry inquiries",
+      "properties": {
+        "name": { "type": "string", "description": "Enquirer name" },
+        "phone": { "type": "string", "description": "Enquirer phone" },
+        "grade": { "type": "string", "description": "Target class or exam" },
+        "message": { "type": "string", "description": "Enquiry question or details" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["name", "phone"]
+    },
+    "users": {
+      "title": "User Session & Activity Profile",
+      "description": "Unified user accounts, session state, learning progress, tasks, and works stored in Firestore",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "name": { "type": "string", "description": "User full display name" },
+        "email": { "type": "string", "description": "User email address" },
+        "phone": { "type": "string", "description": "User phone number" },
+        "role": { "type": "string", "description": "User role (parent, teacher)" },
+        "emailVerified": { "type": "boolean", "description": "Whether user verified email via Firebase link" },
+        "tasks": { "type": "array", "description": "User tasks, assignments, and homework checklist" },
+        "progress": { "type": "object", "description": "Learning progress and syllabus completion metrics" },
+        "enrolledCourses": { "type": "array", "description": "Courses enrolled by the user" },
+        "hiredTutors": { "type": "array", "description": "Tutors hired by the user" },
+        "demoBookings": { "type": "array", "description": "Demo classes requested" },
+        "lastLoginAt": { "type": "string", "description": "Timestamp of most recent verified login" },
+        "createdAt": { "type": "string", "description": "Account registration timestamp" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "success_stories": {
+      "title": "Success Stories",
+      "description": "Student achievements, exam ranks, and testimonials managed by admin",
+      "properties": {
+        "studentName": { "type": "string", "description": "Student full name" },
+        "examOrClass": { "type": "string", "description": "Class or competitive exam" },
+        "scoreOrRank": { "type": "string", "description": "Marks, score or rank achieved" },
+        "school": { "type": "string", "description": "School or college name" },
+        "story": { "type": "string", "description": "Success story or testimonial content" },
+        "imageUrl": { "type": "string", "description": "Student photograph URL" },
+        "tag": { "type": "string", "description": "Highlight badge or tag" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["studentName", "scoreOrRank"]
+    },
+    "gallery_items": {
+      "title": "Gallery Images",
+      "description": "Institute activities, classrooms, student moments, and campus photos",
+      "properties": {
+        "title": { "type": "string", "description": "Image title" },
+        "subtitle": { "type": "string", "description": "Short description" },
+        "category": { "type": "string", "description": "Category (students, classrooms, building)" },
+        "imageUrl": { "type": "string", "description": "Image URL or data URI" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["title", "imageUrl"]
+    },
+    "tutor_bookings": {
+      "title": "Home Tutor Booking Requests",
+      "description": "Incoming parent bookings for dedicated home tutors",
+      "properties": {
+        "id": { "type": "string", "description": "Booking identifier" },
+        "parentName": { "type": "string", "description": "Parent full name" },
+        "parentPhone": { "type": "string", "description": "Parent contact phone number" },
+        "studentName": { "type": "string", "description": "Student full name" },
+        "studentGrade": { "type": "string", "description": "Student school class/grade" },
+        "address": { "type": "string", "description": "Address or locality in Rayagada" },
+        "preferredTimeSlot": { "type": "string", "description": "Preferred study time" },
+        "requestedTutorId": { "type": "string", "description": "Requested tutor ID" },
+        "requestedTutorName": { "type": "string", "description": "Requested tutor full name" },
+        "requestedTutorMonthlyFee": { "type": "number", "description": "Monthly tuition fee" },
+        "status": { "type": "string", "description": "Booking status: pending, accepted, declined, reassigned" },
+        "createdAt": { "type": "string", "description": "ISO creation timestamp" }
+      },
+      "required": ["parentPhone", "studentName", "requestedTutorId"]
+    },
+    "activity_logs": {
+      "title": "Admin Activity & Audit Logs",
+      "description": "Audit trail of admin actions including tutor approvals, demo bookings handling, and payments received from home tutors and courses",
+      "properties": {
+        "adminName": { "type": "string", "description": "Admin who performed the action" },
+        "adminEmail": { "type": "string", "description": "Admin email address" },
+        "actionType": { "type": "string", "description": "Action type: tutor_approved, demo_booking_handled, payment_home_tutor, payment_course, booking_accepted" },
+        "category": { "type": "string", "description": "Category: tutors, demo_bookings, payment_home_tutors, payment_courses, bookings" },
+        "title": { "type": "string", "description": "Short title describing the action" },
+        "description": { "type": "string", "description": "Detailed explanation of the action" },
+        "targetId": { "type": "string", "description": "Associated entity identifier" },
+        "targetName": { "type": "string", "description": "Name of associated student, tutor, or course" },
+        "amount": { "type": "number", "description": "Payment or fee amount in INR if applicable" },
+        "paymentMethod": { "type": "string", "description": "Payment mode (UPI, Cash, Bank Transfer, Online)" },
+        "transactionId": { "type": "string", "description": "Payment reference or transaction ID" },
+        "receiptNo": { "type": "string", "description": "Receipt or voucher number" },
+        "status": { "type": "string", "description": "Action or payment status: completed, verified, pending, flagged" },
+        "timestamp": { "type": "string", "description": "ISO timestamp of when the action occurred" }
+      },
+      "required": ["adminName", "actionType", "title"]
+    }
+  },
+  "firestore": {
+    "/activity_logs/{logId}": {
+      "schema": "activity_logs",
+      "description": "Real-time admin activity and audit logs for tutor approvals, demo bookings, and received payments"
+    },
+    "/tutor_bookings/{bookingId}": {
+      "schema": "tutor_bookings",
+      "description": "Parent home tutor booking requests and notifications"
+    },
+    "/teachers/{teacherId}": {
+      "schema": "teachers",
+      "description": "Verified and pending teacher profiles"
+    },
+    "/parents/{parentId}": {
+      "schema": "parents",
+      "description": "Registered parent accounts and assigned educators"
+    },
+    "/demo_bookings/{bookingId}": {
+      "schema": "demo_bookings",
+      "description": "Parent trial requests and home tutor bookings"
+    },
+    "/enquiries/{enquiryId}": {
+      "schema": "enquiries",
+      "description": "General admissions and course inquiries"
+    },
+    "/users/{userId}": {
+      "schema": "users",
+      "description": "User sessions and activity profiles"
+    },
+    "/success_stories/{storyId}": {
+      "schema": "success_stories",
+      "description": "Admin managed success stories"
+    },
+    "/gallery_items/{itemId}": {
+      "schema": "gallery_items",
+      "description": "Admin managed gallery images"
+    }
+  }
+}

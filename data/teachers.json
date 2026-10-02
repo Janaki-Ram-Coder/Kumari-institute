@@ -1,0 +1,95 @@
+[
+  {
+    "id": "5trmECfxd8PvYFij6eS8d99Hpio1",
+    "name": "Sukumar",
+    "email": "janakiram9471@gmail.com",
+    "phone": "7894492010",
+    "qualification": "B.Sc (Hons) Computer Science",
+    "experienceYears": 1,
+    "experienceText": "1+ Yrs Exp • Computer Science & Foundation Maths",
+    "subjects": [
+      "Mathematics",
+      "Science",
+      "English",
+      "Social Studies",
+      "Odia",
+      "Hindi",
+      "Computer Science"
+    ],
+    "distanceKm": 0.5,
+    "latitude": 19.2176783,
+    "longitude": 83.4197957,
+    "availabilityText": "Available (Mon - Sat)",
+    "availabilityType": "available_now",
+    "availabilityBadge": "Verified Genuine Home Tutor",
+    "rating": 4.9,
+    "reviewCount": 1,
+    "monthlyFee": 1500,
+    "hourlyRate": 100,
+    "bio": "Dedicated educator in Indira Nagar, Rayagada with B.Sc (Hons) Computer Science from MITS. Specializes in 1st to 5th standard all-subject foundational tutoring, conceptual mathematics, science, and computer skills.",
+    "avatar": "https://i.ibb.co/wNqJnHxm/teacher-profile-1790323820849.jpg",
+    "gender": "male",
+    "teacherType": "home",
+    "classesHandled": [
+      "1st Class",
+      "2nd Class",
+      "3rd Class",
+      "4th Class",
+      "5th Class"
+    ],
+    "boardsSupported": [
+      "CBSE",
+      "ICSE",
+      "Odisha State Board"
+    ],
+    "locationArea": "Indira Nagar",
+    "addressSnippet": "Near Sai Software Solutions Computer Center, Indira Nagar, Rayagada - 765001",
+    "verified": true,
+    "status": "approved",
+    "isApproved": true,
+    "isBooked": false,
+    "bookingStatus": "available",
+    "verificationStatus": "Verified Genuine Tutor",
+    "approvedAt": "2026-09-29T21:00:00.000Z",
+    "teachingHighlights": [
+      "1-on-1 Individual Attention at Student's Home",
+      "Interactive Concepts & Daily Problem Solving",
+      "Regular Chapter Tests & Progress Reports to Parents",
+      "Homework Help & Doubt Clearance in All Subjects"
+    ],
+    "educationDetails": {
+      "tenth": {
+        "school": "Lps",
+        "board": "Board of Secondary Education, Odisha (BSE Odisha)",
+        "year": "2018",
+        "score": "56%",
+        "marksheetName": "1000073361.jpg",
+        "marksheetUrl": "https://i.ibb.co/B29FRL8r/10th-marksheet-1790323906930.jpg"
+      },
+      "twelfth": {
+        "college": "Autonomous College, Rayagada",
+        "board": "Council of Higher Secondary Education, Odisha (CHSE Odisha)",
+        "year": "2021",
+        "score": "65%",
+        "marksheetName": "1000073350.jpg",
+        "marksheetUrl": "https://i.ibb.co/9Pp38rB/12th-marksheet-1790323936974.jpg"
+      },
+      "degree": {
+        "university": "Mits",
+        "course": "B.Sc (Hons) Computer Science",
+        "year": "2024",
+        "score": "7.61 CGPA",
+        "marksheetName": "1000073346.jpg",
+        "marksheetUrl": "https://i.ibb.co/zhShfC4r/degree-marksheet-1790324004557.jpg"
+      }
+    },
+    "availableTimeSlots": [
+      "06:00 AM - 07:00 AM",
+      "07:00 AM - 08:00 AM",
+      "08:00 AM - 09:00 AM",
+      "06:00 PM - 07:00 PM",
+      "07:00 PM - 08:00 PM"
+    ],
+    "reviews": []
+  }
+]

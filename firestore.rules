@@ -1,0 +1,67 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Teachers collection: Public read for approved tutors, authenticated or admin write
+    match /teachers/{teacherId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Parents collection: Authenticated parents can manage their details and student requirements
+    match /parents/{parentId} {
+      allow read, write: if true;
+    }
+
+    // Tutor bookings collection: parents submit home tutor requests, admin reviews & updates
+    match /tutor_bookings/{bookingId} {
+      allow read, write: if true;
+    }
+
+    // Demo bookings collection: parents can submit bookings, authenticated users can read/manage
+    match /demo_bookings/{bookingId} {
+      allow create: if true;
+      allow read, update, delete: if true;
+    }
+
+    // General enquiries collection
+    match /enquiries/{enquiryId} {
+      allow create: if true;
+      allow read, update, delete: if true;
+    }
+
+    // Success stories collection: Public read, admin write
+    match /success_stories/{storyId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Gallery items collection: Public read, authenticated write
+    match /gallery_items/{itemId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    // Users activity and session profiles
+    match /users/{userId} {
+      allow read, write: if isAuthenticated();
+    }
+
+    // Activity and Audit Logs collection: tracks admin actions and received payments for auditability
+    match /activity_logs/{logId} {
+      allow read, write: if true;
+    }
+
+    // Health probe for connectivity testing
+    match /_probe/{probeId} {
+      allow read: if true;
+    }
+  }
+}

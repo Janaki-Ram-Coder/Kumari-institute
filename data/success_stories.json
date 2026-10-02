@@ -1,0 +1,62 @@
+[
+  {
+    "id": "story-01",
+    "studentName": "Aaradhya Sahu",
+    "score": "98.4%",
+    "exam": "CBSE Board 10th (District Topper)",
+    "school": "De Paul School, Rayagada",
+    "parentName": "Santosh Sahu",
+    "testimonial": "The personalized attention from Kumari Institute's dedicated mentors transformed my confidence in Mathematics and Science. The daily problem practice and timely doubt-clearing sessions made all the difference.",
+    "image": "/src/assets/images/aaradhya_sahu_1788779317850.jpg",
+    "year": "2024",
+    "badge": "Top Performer"
+  },
+  {
+    "id": "story-02",
+    "studentName": "Rohit Kumar",
+    "score": "AIR 14",
+    "exam": "JNVST Navodaya Selection Exam",
+    "school": "Saraswati Sishu Mandir",
+    "parentName": "K. Srinivas Rao",
+    "testimonial": "Navodaya exam preparation at Kumari Institute is top notch. The mental ability mock tests and shortcut methods helped Rohit crack the exam with flying colors.",
+    "image": "/src/assets/images/student_rohit_1788779382685.jpg",
+    "year": "2024",
+    "badge": "Navodaya Selection"
+  },
+  {
+    "id": "story-03",
+    "studentName": "Saniya Parida",
+    "score": "96.8%",
+    "exam": "BSE Odisha High School Exam",
+    "school": "Rayagada Girls High School",
+    "parentName": "Debabrata Parida",
+    "testimonial": "Home tutoring through Kumari Institute gave Saniya the disciplined study environment she needed at home. Her mentor was extremely supportive and professional.",
+    "image": "/src/assets/images/student_saniya_1788779400367.jpg",
+    "year": "2024",
+    "badge": "State Merit Rank"
+  },
+  {
+    "id": "story-04",
+    "studentName": "Aditya Verma",
+    "score": "97.2%",
+    "exam": "ICSE Class 10 (Mathematics 100/100)",
+    "school": "Sacred Heart Convent",
+    "parentName": "Ramesh Verma",
+    "testimonial": "Scoring 100/100 in ICSE Mathematics seemed impossible until I joined the foundation program. Conceptual clarity was emphasized from day one.",
+    "image": "/src/assets/images/student_aditya_1788779417620.jpg",
+    "year": "2024",
+    "badge": "Perfect 100 in Math"
+  },
+  {
+    "id": "story-05",
+    "studentName": "Meghana Choudhury",
+    "score": "Qualified",
+    "exam": "National Talent Search (NTSE Stage 1)",
+    "school": "Kendriya Vidyalaya, Rayagada",
+    "parentName": "Prakash Choudhury",
+    "testimonial": "Our Kumari Institute home tutor was punctual, knowledgeable, and genuinely cared about Meghana's conceptual growth across all subjects.",
+    "image": "/src/assets/images/student_meghana_1788779434532.jpg",
+    "year": "2024",
+    "badge": "NTSE Scholar"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "gallery-01",
+    "category": "students",
+    "title": "Focused Learning",
+    "subtitle": "Attentive concepts & handwritten notes practice",
+    "image": "/src/assets/images/gallery_student_hero_1788780817013.jpg",
+    "alt": "Focused student writing notes at Kumari Institute",
+    "iconType": "user",
+    "createdAt": "2026-09-20T10:00:00.000Z"
+  },
+  {
+    "id": "gallery-02",
+    "category": "students",
+    "title": "Group Study",
+    "subtitle": "Collaborative peer discussions and doubt solving",
+    "image": "/src/assets/images/gallery_group_study_1788780846402.jpg",
+    "alt": "Students engaged in group study at Kumari Institute",
+    "iconType": "users",
+    "createdAt": "2026-09-20T10:00:00.000Z"
+  },
+  {
+    "id": "gallery-03",
+    "category": "classrooms",
+    "title": "Classroom View 1",
+    "subtitle": "Air-conditioned modern smart lecture hall",
+    "image": "/src/assets/images/gallery_classroom_1_1788780865467.jpg",
+    "alt": "Modern coaching classroom view 1 at Kumari Institute",
+    "iconType": "screen",
+    "createdAt": "2026-09-20T10:00:00.000Z"
+  },
+  {
+    "id": "gallery-04",
+    "category": "classrooms",
+    "title": "Classroom View 2",
+    "subtitle": "Naturally lit spacious study benches & boards",
+    "image": "/src/assets/images/gallery_classroom_2_1788780888132.jpg",
+    "alt": "Naturally lit classroom view 2 at Kumari Institute",
+    "iconType": "screen",
+    "createdAt": "2026-09-20T10:00:00.000Z"
+  },
+  {
+    "id": "gallery-05",
+    "category": "building",
+    "title": "Front View",
+    "subtitle": "Prime learning center in Indira Nagar, Rayagada",
+    "image": "/src/assets/images/gallery_building_front_1788780907779.jpg",
+    "alt": "Kumari Institute building front exterior view",
+    "iconType": "building",
+    "createdAt": "2026-09-20T10:00:00.000Z"
+  },
+  {
+    "id": "gallery-06",
+    "category": "building",
+    "title": "Reception Area",
+    "subtitle": "Welcoming counselor desk & parent lounge",
+    "image": "/src/assets/images/gallery_reception_area_1788780934098.jpg",
+    "alt": "Kumari Institute reception and parent counseling area",
+    "iconType": "building",
+    "createdAt": "2026-09-20T10:00:00.000Z"
+  }
+]
